@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/11.1.0/marked.min.js"></script>
+    <title>YouTube Chatbot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 10px;
+            width: 300px;
+        }
+
+        input,
+        button {
+            width: 90%;
+
+            padding: 8px;
+            margin: 10px auto;
+        }
+        .main{
+            display: flex;
+            flex-direction: column;
+            align-items: center;   
+            justify-content: center;
+        }
+
+        #chatbox {
+            border: 1px solid #ccc;
+            padding: 10px;
+            height: 200px;
+            overflow-y: auto;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>YouTube video summarizer</h3>
+    <div class="main">
+        <input type="text" id="youtubeUrl" placeholder="Paste YouTube URL here..." />
+        <button id="sendBtn">Process</button>
+    </div>
+    <div id="chatbox"></div>
+    <script src="popup.js"></script>
+</body>
+
+</html>
